@@ -13,6 +13,43 @@
               parent="hospital_patient_front_desk"
               action="hospital_patient_action"/>
 
+
+               <record id="hospital_patient_action_viewonly" model="ir.actions.act_window">
+        <field name="name">View Patients</field>
+        <field name="res_model">hospital.patient</field>
+        <field name="view_mode">list,form</field>
+        <field name="view_ids" eval="[(5, 0, 0),
+            (0, 0, {'view_mode': 'list', 'view_id': ref('hospital_patient_view_listreadonly')}),
+            (0, 0, {'view_mode': 'form', 'view_id': ref('hospital_patient_viewreadonly_form')})]"/>
+    </record>
+
+    <menuitem id="hospital_patient_viewonly_menu"
+              name="Patients view"
+              parent="hospital_patient_front_desk"
+              action="hospital_patient_action_viewonly"/>
+    
+
+        <menuitem id="hospital_appointment_menu"
+              name="Appointment"
+              parent="hospital_patient_front_desk"
+              action="hospital_patientAppointment_action"/>
+
+        <menuitem id="hospital_appointment_line_menu"
+              name="Appointment line"
+              parent="hospital_patient_front_desk"
+              action="hospital_patientAppointment_line_action"/>
+
+
+              <menuitem id="hospital_patient_menu_configuration"
+              name="Configuration"
+              parent="hospital_root_menu"
+              />
+
+              <menuitem id="hospital_patient_menu_tag"
+              name="PatientTag"
+              parent="hospital_patient_menu_configuration"
+              action="patient_action_tag"/>
+
     
 
 </odoo>
