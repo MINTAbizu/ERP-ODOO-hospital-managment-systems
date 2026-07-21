@@ -1,5 +1,5 @@
 {
-   "name": "Feya_hospital",
+   "name": "HMS",
     "author": " Mintesenot Bizuaehw",
     "license": "LGPL-3",
       "depends": [
