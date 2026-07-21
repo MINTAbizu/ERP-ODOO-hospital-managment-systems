@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+    <menuitem id="hospital_root_menu" name="HMS" sequence="3"/>
+
+    <menuitem id="hospital_patient_front_desk"
+              name="Front Desk"
+              parent="hospital_root_menu"/>
+
+    <menuitem id="hospital_patient_menu"
+              name="Patients"
+              parent="hospital_patient_front_desk"
+              action="hospital_patient_action"/>
+
+    
+
+</odoo>
