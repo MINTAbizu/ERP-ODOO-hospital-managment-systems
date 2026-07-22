@@ -10,7 +10,7 @@ class hospitaldoctors(models.Model):
     
     doctor_id=fields.Many2one("res.users", string="doctors", required=True , tracking=True)
     specialty_id =fields.Many2one("speciality.docotros"  ,string="specality")
-    department_id= fields.Many2one("hr.department",string="Department")
+    department_id= fields.Many2one("",string="Department")
     qualification= fields.Selection([('degree',"degree") ("masters","masters"),('specialized','specialized')])
     phone = fields.Char(string="Phone ")
     working_hours=fields.Char(string="Woring hour")
