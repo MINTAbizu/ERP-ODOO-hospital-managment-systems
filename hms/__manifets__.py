@@ -8,4 +8,9 @@
         "product",
         "hr"
     ],
+      "data":[
+        
+        "view/ patientview.xml"
+        
+      ]
 }

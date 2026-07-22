@@ -11,6 +11,7 @@
     <record id="hospital_doctor_view_tree" model="ir.ui.view">
         <field name="name">hospital.doctor.view.tree</field>
         <field name="model">hospital.doctor</field>
+        <field name="type">list</field>
         <field name="arch" type="xml">
             <list string="">
             <field name="doctor_id" />

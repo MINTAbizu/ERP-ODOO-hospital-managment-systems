@@ -44,7 +44,7 @@
               name="Configuration"
               parent="hospital_root_menu"
               />
-              <menuitem id="hospital_docotor_menu"
+              <!-- <menuitem id="hospital_docotor_menu"
               name="Doctors"
               parent="hospital_root_menu"
               />
@@ -52,7 +52,7 @@
               name="Doctors"
               parent="hospital_docotor_menu"
               action="hospital_doctor_action"
-              />
+              /> -->
 
               <menuitem id="hospital_patient_menu_tag"
               name="PatientTag"
