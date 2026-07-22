@@ -8,9 +8,9 @@
         "product",
         "hr"
     ],
-      "data":[
+      # "data":[
         
-        "view/ patientview.xml"
+      #   "view/ patientview.xml"
         
-      ]
+      # ]
 }
