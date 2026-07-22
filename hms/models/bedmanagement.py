@@ -13,7 +13,7 @@ class bedmanagement(models.Model):
     name= fields.Char(string="bed name")
     bed_capacity= fields.Char(string="capacity")
     
-    ward_id= fields.Many2one("doctor.descrption",string="ward assigned doctor")
+    ward_id= fields.Many2one("hospital.doctor",string="ward assigned doctor")
     
     location_bed=fields.Char(string="bed location")
     bed_type= fields.Selection([("single","single"),("double","double"),("vip","Vip")])
