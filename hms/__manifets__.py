@@ -6,5 +6,6 @@
         "base",
         "mail",
         "product",
+        "hr"
     ],
 }
