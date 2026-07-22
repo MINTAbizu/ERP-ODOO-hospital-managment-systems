@@ -11,7 +11,7 @@ class  hospitalpatientaddmission(models.Model):
     
     patient_id=fields.Many2one("hospital.patient" , string="patient", required=True)
     
-    addmisiion=fields.Char(string="addmission")
+    addmisiion=fields.Char(string="addmission" )
     admission_date= fields.date(string="admission_date", default=fields.Datetime.now)
     
     bed_id= fields.Many2one("bed.management",string="bed")
